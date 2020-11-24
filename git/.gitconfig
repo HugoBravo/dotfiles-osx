@@ -1,0 +1,19 @@
+[user]
+	name = Hugo Bravo R
+	email = hugo@llamadev.cl
+[core]
+	excludesfile = /Users/hugo/.gitignore_global
+	editor = nano --wait
+[commit]
+	template = /Users/hugo/.stCommitMsg
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

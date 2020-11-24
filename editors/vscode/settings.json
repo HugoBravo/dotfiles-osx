@@ -1,0 +1,94 @@
+{
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.rendererType": "dom",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "todo-tree.tree.showScanModeButton": false,
+    "todo-tree.excludeglobs": [
+        "**/node_modules/**",
+        "**/dist/**",
+    ],
+    "workbench.iconTheme": "material-icon-theme",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9IiwiLnNjcmF0Y2hwYWQiOiI8bXhsaWJyYXJ5Plt7XCJ4bWxcIjpcImpaSGRic0l3RElXZkp2Y20yY1J1b1dPOVFrTGlDYUxGa0docFhhVm1MVysvTkRHRFhTQXRVaVQ3T3o2U2Y1UnB1cmxOZHZCN2NoaVYyU25USkNLdVVUYzNHS1BTRUp3eTcwcHJ5Ri9wanlmcXFxZ3cySVE5LzhlZ3ErSGJ4Z3RXY3RpMHUyT2xJMStqMEVTWDN1RmlXaW16blh4Z1BBNzJjMUduM0h4bW5yc284aW5FMkZDa1ZMekd2UUdzVGVZakovckNCMlh6Q3ZBQ2k0TjZmdUNuOGpLWDdqQXh6azhuTEVqR2E1RTY1SFROSlZOdzdLVkN0Z0FldzltTHpRaXpZODNQdjliN3ZuSWdLN3VsOTlNVTdjL2xmZ0E9XCIsXCJ3XCI6MTIwLFwiaFwiOjMwfV08L214bGlicmFyeT4ifQ==",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "terminal.integrated.fontFamily": "monospace",
+    "todohighlight.exclude": [
+
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/.vscode/**",
+        "**/.github/**",
+        "**/_output/**",
+        "**/*.min.*",
+        "**/*.map",
+        "**/.next/**"
+    ],
+    "color-highlight.languages": [
+    
+        "*"
+    ],
+    "scm.alwaysShowRepositories": true,
+    "editor.fontFamily": "'IBM Plex Mono','Fira Code iScript', 'Fira Code', sans-serif",
+    "editor.fontLigatures": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": [
+              //following will be in italic (=FlottFlott)
+              "comment",
+              "entity.name.type.class", //class names
+              "keyword.operator.new",
+              "keyword", //import, export, return…
+              "constant", //String, Number, Boolean…, this, super
+              "storage.modifier", //static keyword
+              "storage.type.class.js", //class keyword
+              
+            ],
+            "settings": {
+              "fontStyle": "italic"
+            }
+          },
+          {
+            "scope": [
+              //following will be excluded from italics (VSCode has some defaults for italics)
+              
+              "entity.name.function",
+              "invalid",
+              "keyword.operator",
+              // new
+              
+
+              "constant.numeric.css",
+              "keyword.other.unit.px.css",
+              "constant.numeric.decimal.js",
+              "constant.numeric.json"
+            ],
+            "settings": {
+              "fontStyle": ""
+            }
+          }
+        ]
+      },
+      "extensions.ignoreRecommendations": false,
+      "workbench.editorAssociations": [
+        {
+          "viewType": "imagePreview.previewEditor",
+          "filenamePattern": "*.png"
+        }
+      ]
+   
+}
