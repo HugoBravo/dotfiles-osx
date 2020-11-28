@@ -7,3 +7,6 @@ include "/usr/local/share/nano/makefile.nanorc"
 include "/usr/local/share/nano/markdown.nanorc"
 include "/usr/local/share/nano/nanorc.nanorc"
 
+set linenumbers
+set mouse
+
