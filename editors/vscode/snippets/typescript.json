@@ -11,7 +11,7 @@
 			"$2"
 		],
 		"description": "Log output to console"
-	}
+	},
 	// ,
 	// "Angular Import": {
 	// 	"prefix": "ng-imp",
@@ -21,6 +21,62 @@
 	// 	],
 	// 	"description": "Angular import"
 	// }
+	"NgRx Actions": {
+		"prefix": "ngrx-actions",
+		"body": [
+			"import { createAction } from '@ngrx/store';",
+			"",
+			"export const ${1:increment} = createAction('[${2:Counter Component}] ${1:Increment}');",
+		],
+		"description": "Crea las acciones de NgRx"
+	},
 
+	"NgRx Reducer": {
+		"prefix": "ngrx-reducer",
+		"body": [
+			"import { createReducer, on } from '@ngrx/store';",
+			"import { $2 } from './${1:counter}.actions';",
+			"",
+			"export interface State {",
+			"    ${3:key}: ${4:String}; ",
+			"}",
+			"",
+			"export const initialState: State = {",
+			"   ${3:key}: ${5:'hola'},",
+			"}",
+			"",
+			"const _${6:counter}Reducer = createReducer(initialState,",
+			"",
+			"    on(${2:increment}, state => ({ ...state, ${3:key}: ${5:'hola'}})),",
+			"",
+			");",
+			"",
+			"export function ${6:counter}Reducer(state, action) {",
+			"    return _${6:counter}Reducer(state, action);",
+			"}"
+		],
+		"description": "Crea el reducer básico"
+	},
+
+
+	"NgRx App Reducer": {
+		"prefix": "ngrx-app-reducers",
+		"body": [
+			"import { ActionReducerMap } from '@ngrx/store';",
+			"import * as $1 from './$2.reducer';",
+			"",
+			"",
+			"export interface AppState {",
+			"   ${3:todos}: $4",
+			"}",
+			"",
+			"",
+			"",
+			"export const appReducers: ActionReducerMap<AppState> = {",
+			"   ${3:todos}: $5,",
+			"}",
+		],
+		"description": "Crea el AppReducer principal"
+	},
 
 }

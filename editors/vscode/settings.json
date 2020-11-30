@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "explorer.confirmDelete": false,
     "terminal.integrated.rendererType": "dom",
     "workbench.colorTheme": "Visual Studio Dark",

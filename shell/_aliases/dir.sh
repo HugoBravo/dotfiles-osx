@@ -8,4 +8,4 @@ alias fuck="sudo !!"
 # Jumps
 alias ~="cd ~"
 alias cdc="cd ~/code"
-
+alias cdesk="cd ~/Desktop" 
