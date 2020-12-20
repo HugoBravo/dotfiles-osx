@@ -105,3 +105,4 @@ source $ZSH/oh-my-zsh.sh
 
 
 source $DOTFILES_PATH/shell/init.sh
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"

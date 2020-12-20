@@ -3,7 +3,7 @@
 	email = hugo@llamadev.cl
 [core]
 	excludesfile = /Users/hugo/.gitignore_global
-	editor = nano --wait
+	editor = nano
 [commit]
 	template = /Users/hugo/.stCommitMsg
 [filter "lfs"]
